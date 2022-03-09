@@ -1,0 +1,725 @@
+@font-face {
+    font-family: Filson_Bold;
+    src: url(../fontes/Baufra\ W01\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Filson_Light;
+    src: url(../fontes/Baufra\ W01\ Light.ttf);
+}
+
+@font-face {
+    font-family: Filson_Book;
+    src: url(../fontes/Baufra\ W01\ Regular.ttf);
+}
+
+
+body{
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-family: Filson_Book;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-image: url(../images/background.svg);
+}
+
+a:link{
+    color: white;
+}
+
+.pagecontent__{
+    background-color: rgba(252, 250, 237, 0.8);
+}
+
+.pagecontentmobile{
+    display: none;
+}
+
+header{
+    background-color: rgb(0, 104, 55);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    right: 0;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: white;
+}
+
+.menu1{
+    background-color: rgb(1, 82, 44);
+    font-size: 10px;
+    font-family: Filson_Bold;
+    height: 33px;
+}
+
+.menu1 a{
+    margin: 0 23px;
+    line-height: 33px;
+}
+
+.menu2{
+    font-size: 12px;
+    height: 88.453px;
+    padding: 15px 30px;
+    margin-top: 33px;
+}
+
+.menu2-container{
+    display: flex;
+    margin: 0 auto;
+    height: 58px;
+    padding: 0 15px;
+    max-width: 1300px;
+}
+
+.logo img{
+    width: 162.906;
+    height: 61.453px;
+}
+
+.menumid{
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    align-items: center;
+    text-align: center;
+}
+
+.menumid a{
+    border-radius: 50px;
+    min-height: 27.7px; 
+    margin-right: 25px; 
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.menumid a img{
+    width: 100px;
+}
+.page-content{
+    position: relative;
+
+}
+
+.banner1{
+    width: 100%;
+    text-align: center;
+}
+
+.banner1 img{
+    margin: auto;
+    width: 100%;
+}
+
+.div-container{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    background-color: rgb(0, 104, 55);
+    padding-bottom: 40px;
+}
+
+.top{
+    font-family: Filson_Regular;
+    color: #525252;
+    text-align: center;
+}
+
+.top h2{
+    font-size: 35px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.top h3{
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+}
+
+/*    -----------------------------------   */
+
+
+.produto-escolha{
+    height: 197px;
+}
+.produtos-escolha-container{
+    display: flex;
+    margin: auto;
+    width: max-content;
+    padding-top: 50px;
+}
+
+.produto-escolha{
+    width: 200px;
+    height: max-content;
+    margin: 0 10px;
+    color: #525252;
+    
+}
+
+.produto-escolha:hover{
+    color: rgb(1, 82, 44);
+    cursor: pointer;
+}
+
+.produto-escolha img{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: solid 2px; 
+    color: white;
+}
+
+.produto-escolha img:hover{
+    border: solid 2px; 
+    color: rgb(1, 82, 44);
+}
+
+.bg-produto-escolha{
+    background-color: rgb(252, 250, 237);
+    border-radius: 15px;
+    position: absolute;
+}
+
+.info-escolha{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-family: Baufra_Bold;
+    color: rgb(252, 250, 237);
+}
+
+.img-inicio-section{
+    width: 100%;
+}
+
+.img-section img{
+    width: 100%;
+}
+
+#patrocinadores{
+    padding-top: 50px;
+}
+
+.glide-container{
+    width: 1200px;
+    margin: auto;
+    padding: 50px;
+}
+
+.glide__slide img{
+    border-radius: 15px;
+    width: 268px;
+    height: 230px;
+    border: solid 2px rgb(0, 104, 55)
+}
+
+.glide__arrow--right{
+    margin-right: -100px;
+    margin-top: -30px;
+    background-color: rgb(198, 156, 109);
+}
+
+.glide__arrow--left{
+    margin-left: -100px;
+    margin-top: -30px;
+    background-color: rgb(198, 156, 109);
+}
+
+.info-slide{
+    font-size: 15px;
+    color: rgb(1, 82, 44);
+    text-transform: uppercase;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+
+/*    -----------------------------------   */
+
+.botao-produtos{
+    background-color: #FF5B3C;
+    padding:15px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Baufra_Bold;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.botao-produtos:hover{
+    color: #fff;
+    background-color: rgb(0, 104, 55);
+}
+
+.section3{
+    color: white;
+}
+
+.sobre{
+    position: relative;
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    padding: 80px 15%;
+    align-items: center;
+}
+
+.sobre div{
+    width: 500px;
+    height: max-content;
+    text-align: justify;
+}
+
+.sobre div p{
+    text-align: justify;
+}
+
+.btn_saibaMais{
+    color: rgb(255, 251, 223);    
+    text-decoration: none;
+    background-color: rgb(0, 104, 55);
+    padding: 5px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.sobre div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gltimg{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+.gltimg img{
+    width: 100%;
+    height: 100%;
+}
+
+.equipe{
+    padding: 10px 20px 80px;
+}
+
+
+.h2{
+    text-align: center;
+    font-size: 35px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.disp-flex{
+    display: flex;
+}
+
+.pessoa{
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+.pessoa img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 6px;
+    border-color: rgb(198, 156, 109);
+}
+
+.pessoa img:hover{
+    border-style: solid;
+    border-width: 3px;
+    padding: 6px;
+    border-color: rgb(1, 82, 44);
+    cursor: pointer;
+}
+
+.pessoa h2{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.pessoa h3{
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.pessoa h4{
+    color: gray;
+}
+
+/*--------------------------------  FOOTER  ----------------------------------*/
+
+
+.footer-clean {
+    padding:50px 0;
+    background-color: rgb(0, 104, 55);
+    color:white;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+   
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+
+/*------------------------------------------------------
+
+
+                    PÁGINA RESPONSIVA
+
+
+--------------------------------------------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.svg);
+    background-size: contain;
+}
+
+.pagecontentmobile{
+    background-color: rgba(252, 250, 237, 0.8);
+
+}
+
+.menucontentmobile{
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 89.63px;
+    right: 0;
+    background-color: rgb(0, 104, 55);
+    overflow-x: hidden;
+    transition: all .5s;
+    text-align: center;
+    height: 90%;
+}
+
+.open{
+    width: 100%;
+    height: 90%;
+}
+
+.parte1{
+    background-color: rgb(0, 104, 55);
+    height: 40%;
+    min-height: 350px;
+    padding-top: 5%;
+    border-top:solid 2px #DEDEDE;
+}
+
+.parte-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 25px;
+    font-family: Baufra_Bold;
+    min-width: 292px;
+    max-width: 292px;
+}
+
+.parte1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 0 auto 8px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.parte2{
+    background-color: rgb(1, 82, 44);
+    margin: 0 auto;
+    height: 60%;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.parte2 a{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+.header{
+    background-color: rgb(0, 104, 55);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+}   
+
+.header img{
+    width: 152px ;
+    height: 57px;
+}
+
+.header div img{
+    width: 20px;
+    height: 17px;
+}
+
+.carrosel__1{
+    width: 95%;
+    margin: auto;
+    margin-top: 115px;
+}
+
+a#link__socio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 25px;
+    border-radius: 50px;
+    height: 45px;
+    background-color: rgb(0, 104, 55);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Baufra_Bold;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a#link__socio:visited{
+    color: white;
+}
+
+.opcoes__{
+    position: relative;
+}
+
+.linkc__{
+    text-align: center;
+}
+
+.linkc__ img{
+    width: 90%;
+    margin: auto;
+}
+
+.link__{
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    margin-top: -21px;
+    position: sticky;
+    font-family: Baufra_Bold;
+    color: white;
+    font-size: 12px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 40px;
+    width: 230px;
+    margin-bottom: 25px;
+}
+
+.promo__{
+    background-color: #FF5B3C;
+    font-family: Baufra_Medium;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.promo__container{
+    text-align: center;
+    padding: 55px 20px 64px;
+}
+
+.missao__ h3{
+    color: white;
+    font-size: 16px;
+    margin: auto;
+}
+
+.iconsrs__container{
+    min-width: 233px;
+    max-width: 233px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.iconsrs__container a{
+    margin-right: 22px;
+}
+.iconsrs__container a img{
+    width: 26px;
+    box-sizing: border-box;
+}
+
+.produto-escolha__ img{
+    width: 60%;
+}
+
+
+
+/*------------------------------------------------------
+
+                    RESPONSIVIDADE
+
+--------------------------------------------------------*/
+
+
+@media screen and (max-width: 1250px){
+    
+    .opcoes-container{
+        width: 990px;
+    }
+
+    .linkc img{
+        width: 300px;
+    }
+
+    .glide-container{
+        width: 99%;
+    }
+
+    .glide-container ul li img{
+        width: 99%;
+        height: 90%;
+    }
+
+    .glide__arrow--right{
+        margin-right: -70px;
+    }
+    
+    .glide__arrow--left{
+        margin-left: -70px;
+    }
+    
+    .cont-fim-1{
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .pagecontent__{
+        display: none;
+    }
+    .pagecontentmobile{
+        display: inherit;
+    }
+}
