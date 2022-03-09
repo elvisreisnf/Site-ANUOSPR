@@ -288,7 +288,7 @@ header a:hover{
 }
 
 .sobre div p{
-    text-align: justify;
+    text-align: unset;
 }
 
 .btn_saibaMais{
@@ -552,8 +552,6 @@ body{
     font-size: 14px;
 }
 
-
-
 .header{
     background-color: rgb(0, 104, 55);
     display: flex;
@@ -564,7 +562,6 @@ body{
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    position: fixed;
     z-index: 10;
 }   
 
@@ -581,7 +578,6 @@ body{
 .carrosel__1{
     width: 95%;
     margin: auto;
-    margin-top: 115px;
 }
 
 a#link__socio{
@@ -634,6 +630,10 @@ a#link__socio:visited{
     margin-bottom: 25px;
 }
 
+.link__opcoes{
+    text-decoration: none;
+}
+
 .promo__{
     background-color: #FF5B3C;
     font-family: Baufra_Medium;
@@ -671,6 +671,12 @@ a#link__socio:visited{
 
 .produto-escolha__ img{
     width: 60%;
+}
+
+.info-escolha__{
+    text-decoration: none;
+    color: #525252;
+    margin: 5px 0 20px 0;
 }
 
 
