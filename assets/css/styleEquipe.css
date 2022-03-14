@@ -1,0 +1,29 @@
+.equipe{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15% 0;
+}
+
+.equipe-container{
+    text-align: center;
+    width: 250px;
+
+    color: white;
+    
+    border-radius: 5%;
+}
+
+.equipe-container h1{
+    font-size: 23px;
+}
+
+.equipe-container h2{
+    font-size: 20px;
+}
+
+.img-equipe{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
