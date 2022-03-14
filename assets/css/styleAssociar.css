@@ -1,0 +1,179 @@
+.socio{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.socioEstudante{
+    width: 450px;
+    height: 600px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.socioProfissional{
+    width: 450px;
+    height: 600px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.socioEstudante_{
+    width: 100vw;
+    height: 500px;
+    padding-top: 30px;
+
+    position: relative;
+}
+
+.socioProfissional_{
+    width: 100vw;
+    height: 500px;
+    padding-top: 30px;
+
+    position: relative;
+}
+
+.logos{
+    width: max-content;
+    margin: auto;
+}
+
+.logos img{
+    margin: 0 30px;
+}
+
+.h2-baixo{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    color: rgb(2, 119, 2);
+    font-size: 50px;
+
+    cursor: pointer;
+}
+
+h2:hover{
+    color: rgb(34, 87, 10);
+}
+
+.columns{
+    position: absolute;
+    top: 60%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+form{
+    text-align: center;
+    width: max-content;
+}
+
+#inpNome{
+    width:420px;
+}
+
+.field{
+    display: flex;
+    margin: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border: solid 0.5px black;
+    height: 30px;
+    width: 190px;
+    text-align: center;
+}
+
+input::placeholder{
+    text-transform: uppercase;
+    text-shadow: black;
+}
+
+select{
+    border-radius: 5px;
+    border: solid 0.5px black;
+    height: 30px;
+    width: 190px;
+    text-align: center;
+}
+
+.button{
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(2, 119, 2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-field{
+    display: flex;
+}
+
+
+@media (max-width:1024px) {
+
+    .body1{
+        background-image: url(banner-menor.png);    
+    }
+}
+
+@media (max-width:500px) {
+
+    .body1{
+        background-image: url(banner-min.png);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    input{
+        height: 20px;
+        width: 145px;
+    }
+
+    #inpNome{
+        width: 310px;
+    }
+
+    select{
+        height: 20px;
+        width: 145px;
+    }
+
+    .h2-cima{
+        font-size: 30px;
+    
+        cursor: pointer;
+    }
+    
+    .h2-baixo{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:400px) {
+
+    input{
+        height: 20px;
+        width: 130px;
+    }
+
+    #inpNome{
+        width: 300px;
+    }
+
+    select{
+        height: 20px;
+        width: 130px;
+    }
+}

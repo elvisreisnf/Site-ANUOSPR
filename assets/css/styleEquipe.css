@@ -4,6 +4,12 @@
     padding: 30px 15% 0;
 }
 
+.equipe_{
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
 .equipe-container{
     text-align: center;
     width: 250px;

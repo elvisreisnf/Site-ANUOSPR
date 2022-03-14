@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Associar-se | ANUOSPR</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+  <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../glide-3.4.1/dist/css/glide.core.min.css" />
+  <link rel="stylesheet" href="../glide-3.4.1/dist/css/glide.theme.min.css" />
+  <link rel="stylesheet" href="../assets/css/styleAssociar.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+
+</head>
+
+<body class="body">
+  <!-- RESPONSIVA ------------------------------------------------------------------------------------------------------------------------------------>
+
+  <div class="pagecontentmobile">
+    <header class="header">
+      <div style="display: flex">
+        <img src="../assets/images/logo-branca.svg" alt="" style="width: 130px; height: 130px" />
+      </div>
+      <div class="menu-responsivo" onclick="menuresponsivo()">
+        <img src="../assets/icons/icon-menu.png" />
+      </div>
+    </header>
+
+    <div class="menucontentmobile">
+      <div class="parte1">
+        <div class="parte-container">
+          <a href="Sobre.html" style="background-color: rgb(0, 78, 42)">SOBRE</a><br />
+          <a href="Equipe.html">EQUIPE</a><br />
+          <a href="#">CURSOS & EVENTOS</a><br />
+          <a href="#">ASSOCIE-SE</a><br />
+          <div style="display: flex">
+            <a href="https://www.instagram.com/anuospr/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.facebook.com/anuospr"><i class="icon ion-social-facebook"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=554599923868"><i class="icon ion-social-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagecontentmobile2">
+      <main>
+        <section class="socioEstudante_">
+
+          <div class="logos">
+            <img src="logo-anuosp.png" alt="" style="width: 100px; ">
+            <img src="logo-anap.png" alt="" style="width: 120px;">
+          </div>
+
+          <h2 style="text-align: center; color: rgb(2, 119, 2); padding-top: 30px;">Sou estudante:</h2>
+          <div class="columns">
+            <div class="column is-half">
+              <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+
+                <input type="hidden" name="accessKey" value="46f528a7-dfc7-46ea-8893-d9a91ed79823">
+                <input type="hidden" name="subject" value="Test from jsfiddle">
+
+                <input type="hidden" name="redirectTo" value="https://pag.ae/7XEAdRUes">
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" name="name" placeholder="Nome Completo" id="inpNome" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" name="$instituição" placeholder="Instituição de Ensino" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input type="number" name="$maticula" placeholder="N° de Matrícula" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <select name="$pais" id="paises" onclick="oculta('estados')">
+                        <option>País</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="paraguai">Paraguai</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="field" id="estados">
+                    <div class="control">
+                      <select name="$estado" id="estado">
+                        <option>Paraná</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input type="text" name="$cidade" placeholder="Cidade" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="email" name="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input type="tel" name="phone" placeholder="Telefone" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input type="number" name="$documento" placeholder="N° de Documento" required>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="button is-primary" type="Submit">Ir para pagamento</button>
+              </form>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="socioProfissional_">
+
+          <div class="logos">
+            <img src="logo-anuosp.png" alt="" style="width: 100px; ">
+            <img src="logo-anap.png" alt="" style="width: 120px;">
+          </div>
+
+          <h2 style="text-align: center; color: rgb(2, 119, 2); padding-top: 30px;">Sou profissional:</h2>
+          <div class="columns">
+            <div class="column is-half">
+              <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+
+                <input type="hidden" name="accessKey" value="46f528a7-dfc7-46ea-8893-d9a91ed79823">
+                <input type="hidden" name="subject" value="Test from jsfiddle">
+
+                <input type="hidden" name="redirectTo" value="https://pag.ae/7XEzZv4um">
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" name="name" placeholder="Nome Completo" id="inpNome" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <select name="$pais" id="paises" onclick="oculta('estados')">
+                        <option>País</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="paraguai">Paraguai</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="field" id="estados">
+                    <div class="control">
+                      <select name="$estado" id="estado">
+                        <option>Paraná</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input type="text" name="$cidade" placeholder="Cidade" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="email" name="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-field">
+                  <div class="field">
+                    <div class="control">
+                      <input type="tel" name="phone" placeholder="Telefone" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input type="number" name="$documento" placeholder="N° de Documento" required>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="button is-primary" type="Submit">Ir para pagamento</button>
+              </form>
+            </div>
+          </div>
+
+        </section>
+      </main>
+      <div class="footer-clean">
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Mapa do Site</h3>
+                <ul>
+                  <li><a href="Sobre.html">Sobre</a></li>
+                  <li><a href="Equipe.html">Equipe</a></li>
+                  <li><a href="#">Cursos & Eventos</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Seja um de nós</h3>
+                <ul>
+                  <li><a href="#">Associe-se</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Contate-nos</h3>
+                <ul>
+                  <li>
+                    <a href="https://www.instagram.com/anuospr/">@anuospr</a>
+                  </li>
+                  <li>
+                    <a href="mailto:contato@anuosp.com.br">contato@anuosp.com.br</a>
+                  </li>
+                  <li>
+                    <a href="https://api.whatsapp.com/send?phone=554599923868">+55 (45) 99923868</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 item social">
+                <a href="https://www.instagram.com/anuospr/"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://www.facebook.com/anuospr"><i class="icon ion-social-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=554599923868"><i class="icon ion-social-whatsapp"></i></a>
+                <p class="copyright">©ANUOSPR 2021</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="indexmobile.js"></script>
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <div class="pagecontent__">
+    <header>
+      <div class="menu1 fixed-top">
+        <a href="https://www.anuosp.com.br/quem-somos">ASSOCIAÇÃO DE NUTRIÇÃO DO OESTE E SUDOESTE DO PARANÁ</a>
+      </div>
+
+      <div class="menu2">
+        <div class="menu2-container">
+          <div class="menumid">
+            <a href="../index.html"><img src="../assets/images/logo-branca.svg" alt="" /></a>
+            <a href="Sobre.html">SOBRE</a><br />
+            <a href="Equipe.html">EQUIPE</a>
+            <a href="#">CURSOS E EVENTOS</a>
+            <a href="#" style="background-color: rgb(1, 82, 44)">ASSOCIE-SE</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content socio">
+
+      <section class="socioEstudante">
+
+        <div class="logos">
+          <img src="logo-anuosp.png" alt="" style="width: 100px; ">
+          <img src="logo-anap.png" alt="" style="width: 120px;">
+        </div>
+
+        <h2 style="text-align: center; color: rgb(2, 119, 2); padding-top: 30px;">Sou estudante:</h2>
+        <div class="columns">
+          <div class="column is-half">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+
+              <input type="hidden" name="accessKey" value="46f528a7-dfc7-46ea-8893-d9a91ed79823">
+              <input type="hidden" name="subject" value="Test from jsfiddle">
+
+              <input type="hidden" name="redirectTo" value="https://pag.ae/7XEAdRUes">
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" name="name" placeholder="Nome Completo" id="inpNome" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" name="$instituição" placeholder="Instituição de Ensino" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input type="number" name="$maticula" placeholder="N° de Matrícula" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <select name="$pais" id="paises" onclick="oculta('estados')">
+                      <option>País</option>
+                      <option value="brasil">Brasil</option>
+                      <option value="paraguai">Paraguai</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field" id="estados">
+                  <div class="control">
+                    <select name="$estado" id="estado">
+                      <option>Paraná</option>
+                      <option>Acre</option>
+                      <option>Alagoas</option>
+                      <option>Amapá</option>
+                      <option>Amazonas</option>
+                      <option>Bahia</option>
+                      <option>Ceará</option>
+                      <option>Distrito Federal</option>
+                      <option>Espírito Santo</option>
+                      <option>Goiás</option>
+                      <option>Maranhão</option>
+                      <option>Mato Grosso</option>
+                      <option>Mato Grosso do Sul</option>
+                      <option>Minas Gerais</option>
+                      <option>Pará</option>
+                      <option>Paraíba</option>
+                      <option>Paraná</option>
+                      <option>Pernambuco</option>
+                      <option>Piauí</option>
+                      <option>Rio de Janeiro</option>
+                      <option>Rio Grande do Norte</option>
+                      <option>Rio Grande do Sul</option>
+                      <option>Rondônia</option>
+                      <option>Roraima</option>
+                      <option>Santa Catarina</option>
+                      <option>São Paulo</option>
+                      <option>Sergipe</option>
+                      <option>Tocantins</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input type="text" name="$cidade" placeholder="Cidade" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input type="tel" name="phone" placeholder="Telefone" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input type="number" name="$documento" placeholder="N° de Documento" required>
+                  </div>
+                </div>
+              </div>
+
+              <button class="button is-primary" type="Submit">Ir para pagamento</button>
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="socioProfissional">
+
+        <div class="logos">
+          <img src="logo-anuosp.png" alt="" style="width: 100px; ">
+          <img src="logo-anap.png" alt="" style="width: 120px;">
+        </div>
+
+        <h2 style="text-align: center; color: rgb(2, 119, 2); padding-top: 30px;">Sou profissional:</h2>
+        <div class="columns">
+          <div class="column is-half">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+
+              <input type="hidden" name="accessKey" value="46f528a7-dfc7-46ea-8893-d9a91ed79823">
+              <input type="hidden" name="subject" value="Test from jsfiddle">
+
+              <input type="hidden" name="redirectTo" value="https://pag.ae/7XEzZv4um">
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" name="name" placeholder="Nome Completo" id="inpNome" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <select name="$pais" id="paises" onclick="oculta('estados')">
+                      <option>País</option>
+                      <option value="brasil">Brasil</option>
+                      <option value="paraguai">Paraguai</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field" id="estados">
+                  <div class="control">
+                    <select name="$estado" id="estado">
+                      <option>Paraná</option>
+                      <option>Acre</option>
+                      <option>Alagoas</option>
+                      <option>Amapá</option>
+                      <option>Amazonas</option>
+                      <option>Bahia</option>
+                      <option>Ceará</option>
+                      <option>Distrito Federal</option>
+                      <option>Espírito Santo</option>
+                      <option>Goiás</option>
+                      <option>Maranhão</option>
+                      <option>Mato Grosso</option>
+                      <option>Mato Grosso do Sul</option>
+                      <option>Minas Gerais</option>
+                      <option>Pará</option>
+                      <option>Paraíba</option>
+                      <option>Paraná</option>
+                      <option>Pernambuco</option>
+                      <option>Piauí</option>
+                      <option>Rio de Janeiro</option>
+                      <option>Rio Grande do Norte</option>
+                      <option>Rio Grande do Sul</option>
+                      <option>Rondônia</option>
+                      <option>Roraima</option>
+                      <option>Santa Catarina</option>
+                      <option>São Paulo</option>
+                      <option>Sergipe</option>
+                      <option>Tocantins</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input type="text" name="$cidade" placeholder="Cidade" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-field">
+                <div class="field">
+                  <div class="control">
+                    <input type="tel" name="phone" placeholder="Telefone" required>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input type="number" name="$documento" placeholder="N° de Documento" required>
+                  </div>
+                </div>
+              </div>
+
+              <button class="button is-primary" type="Submit">Ir para pagamento</button>
+            </form>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <section>
+      <div id="produto">
+        <div class="glide-container">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides gelatos">
+                <li class="glide__slide">
+                  <img src="../assets/images/patrocinadores/artvida.png" alt="" id="image1" />
+                  <div class="info-slide">ARTVIDA</div>
+                </li>
+                <li class="glide__slide">
+                  <img src="../assets/images/patrocinadores/dovalle.png" alt="" id="image2" />
+                  <div class="info-slide">dovalle</div>
+                </li>
+                <li class="glide__slide">
+                  <img src="../assets/images/patrocinadores/extreme_nutrition.png" alt="" id="image3" />
+                  <div class="info-slide">extreme nutrition</div>
+                </li>
+                <li class="glide__slide">
+                  <img src="../assets/images/patrocinadores/Formula_Natural.png" alt="" id="image4" />
+                  <div class="info-slide">fórmula natural</div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                < </button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    >
+                  </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Mapa do Site</h3>
+              <ul>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Equipe.html">Equipe</a></li>
+                <li><a href="#">Cursos & Eventos</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Seja um de nós</h3>
+              <ul>
+                <li><a href="#">Associe-se</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Contate-nos</h3>
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/anuospr/">@anuospr</a>
+                </li>
+                <li>
+                  <a href="mailto:contato@anuosp.com.br">contato@anuosp.com.br</a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=554599923868">+55 (45) 99923868</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="https://www.instagram.com/anuospr/"><i class="icon ion-social-instagram"></i></a>
+              <a href="https://www.facebook.com/anuospr"><i class="icon ion-social-facebook"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=554599923868"><i class="icon ion-social-whatsapp"></i></a>
+              <p class="copyright">©ANUOSPR 2021</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+  <script src="../glide-3.4.1/dist/glide.min.js"></script>
+  <script src="../glide-3.4.1/dist/glide.js"></script>
+  <script src="../assets/js/index.js"></script>
+  <script src="../assets/js/indexmobile.js"></script>
+  <script src="../assets/js/trocaslide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="scriptAssociar.js"></script>
+</body>
+
+</html>
